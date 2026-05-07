@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EM Unit</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #f5f5f5;
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+        color: #333;
+      }
+      .parent {
+        font-size: 20px;
+        background: #e0eaff;
+        padding: 1em;
+        border-radius: 6px;
+        margin-bottom: 12px;
+      }
+      .child {
+        font-size: 1em;
+        background: #4f8ef7;
+        color: white;
+        padding: 0.5em;
+        border-radius: 4px;
+        margin-top: 8px;
+      }
+      .nested {
+        font-size: 1em;
+        background: #1a4fbf;
+        color: white;
+        padding: 0.5em;
+        border-radius: 4px;
+        margin-top: 8px;
+      }
+      p {
+        font-size: 13px;
+        color: #666;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>em — Relative to parent font-size</h2>
+    <div class="parent">
+      Parent: font-size 20px, padding: 1em (= 20px)
+      <div class="child">
+        Child: 1em = 20px (from parent), padding: 0.5em
+        <div class="nested">
+          Nested: 1em = still 20px here, but em can compound!
+        </div>
+      </div>
+    </div>
+    <p>Each em is relative to the font-size of its own parent element.</p>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport Unit</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        background: #f5f5f5;
+      }
+      .hero {
+        width: 100vw;
+        height: 40vh;
+        background: linear-gradient(135deg, #4f8ef7, #1a4fbf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2vw;
+        text-align: center;
+      }
+      .bar {
+        height: 10vh;
+        background: #e0eaff;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 13px;
+        color: #333;
+      }
+      .info {
+        padding: 20px;
+        font-size: 13px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">100vw wide · 40vh tall · font-size: 2vw</div>
+    <div class="bar">This bar is 10vh tall — 10% of the viewport height</div>
+    <div class="info">
+      <strong>vw</strong> = 1% of viewport width<br />
+      <strong>vh</strong> = 1% of viewport height<br /><br />
+      Resize the browser window to see how everything scales with the screen.
+    </div>
+  </body>
+</html>
